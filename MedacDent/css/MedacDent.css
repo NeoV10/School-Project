@@ -1,4 +1,6 @@
 @import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 
 body{
     background-color: #464b50;
@@ -19,7 +21,6 @@ main{
     align-items: center;
     background-color: #464b59;
     max-width: 38em;
-    min-height: 38em;
     margin: 0 auto;   
     border-radius: 2em;
     padding: 3em;
@@ -38,6 +39,7 @@ img{
 
 .main-container .link .btn-make,
 .main-container .link .btn-check{
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,12 +57,12 @@ img{
 
 .main-container .link .btn-make{
     grid-column: 1;
-    grid-row: 7;
+    grid-row: 6;
 }
 
 .main-container .link .btn-check{
     grid-column: 5;
-    grid-row: 7;
+    grid-row: 6;
 }
 
 .main-container .link .btn-make:hover,
@@ -82,7 +84,9 @@ img{
     font-family: "Itim", cursive;
     color: #529ca4;
     position: absolute;
+    bottom: 0; /*Uso el bottom 0 para que me quede pegado en eñ final de pagina, en otra pagina no lo debo usar para que sea responsive */
     width: 98%;
+    font-size: 1.2em;
 }
 
 .links{
