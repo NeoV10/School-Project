@@ -18,8 +18,8 @@ main{
     flex-direction: column;
     align-items: center;
     background-color: #464b59;
-    width: 37em;
-    min-height: 30em;
+    max-width: 38em;
+    min-height: 38em;
     margin: 0 auto;   
     border-radius: 2em;
     padding: 3em;
@@ -36,36 +36,14 @@ img{
     grid-template-rows: repeat(8, 1fr);
 }
 
-.main-container .link .btn-make{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2em;
-    border-radius: 1em;
-    width: 12em;
-    cursor: pointer;
-    border: 0.4em solid #464b59;
-    box-shadow: 0.2em 0.2em 0.2em;
-    font-family: "Itim", cursive;
-    color: white;
-    background-color: #464b59;
-    text-decoration: none;
-    grid-column: 1;
-    grid-row: 7;
-
-}
-
-.main-container .link .btn-make:hover{
-    transform: scale(1.05);
-}
-
+.main-container .link .btn-make,
 .main-container .link .btn-check{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 2em;
-    width: 12em;
     border-radius: 1em;
+    width: 12em;
     cursor: pointer;
     border: 0.4em solid #464b59;
     box-shadow: 0.2em 0.2em 0.2em;
@@ -73,17 +51,54 @@ img{
     color: white;
     background-color: #464b59;
     text-decoration: none;
+}
+
+.main-container .link .btn-make{
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.main-container .link .btn-check{
     grid-column: 5;
     grid-row: 7;
 }
 
+.main-container .link .btn-make:hover,
 .main-container .link .btn-check:hover{
     transform: scale(1.05);
 }
 
-.main-container .link .btn-make:focus, .main-container .link .btn-check:focus{
+
+.main-container .link .btn-make:focus,
+.main-container .link .btn-check:focus{
     outline: none;
     box-shadow: 0 0 0 0.2em #529ca4;
+}
+.foot{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Itim", cursive;
+    color: #529ca4;
+    position: absolute;
+    width: 98%;
+}
+
+.links{
+    display: flex;
+    gap: 3em;
+    color: #529ca4;
+}
+
+a{
+    text-decoration: none;
+    color: #529ca4;
+}
+
+figure img{
+    border-radius: 0.5em;
+    box-shadow: 0 0 200px 5px #529ca4;
 }
 
 @media (min-width: 375px) {
